@@ -6,9 +6,14 @@ import { USERComponent } from './user/user.component';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, USERComponent],
-  template: `<app-user [user]="'imane'"> </app-user>`,
+  template: `<app-user [user]="'imane'" [id]="1"  (supprimer)="supprimerUserId($event)"> </app-user>
+  `
+  ,
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  
+
+  supprimerUserId(id:number) {
+    console.log("theuser with id "+id+"isdeleted");
+  }
 }
