@@ -11,12 +11,14 @@ import { MonSiDirective } from './directives/mon-si.directive';
   template: `<app-user [user]="'imane'" [id]="1"  (supprimer)="supprimerUserId($event)"> </app-user>
   <button  (click)="visible=!visible">Display/Hide</button>
   <p  *appMonSi="visible"> hi imane,how are you</p>
+  
   `
   ,
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   visible= true;
+
 
   supprimerUserId(id:number) {
     console.log("theuser with id "+id+"isdeleted");
