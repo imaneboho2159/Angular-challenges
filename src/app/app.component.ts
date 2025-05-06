@@ -12,7 +12,8 @@ import { TachesComponent } from './taches/taches.component';
   template: `<app-user [user]="'imane'" [id]="1"  (supprimer)="supprimerUserId($event)"> </app-user>
   <button  (click)="visible=!visible">Display/Hide</button>
   <p  *appMonSi="visible"> hi imane,how are you</p> 
-  <app-taches></app-taches>`,
+  <app-taches></app-taches>
+  <router-outlet></router-outlet>`,
   styleUrls: ['./app.component.css'] 
 
 

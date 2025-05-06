@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   imports: [CommonModule, FormsModule],
 
   template:`<ul>
-  <li *ngFor="let tache of taches">{{tache}}> </li>
+  <li *ngFor="let tache of taches">{{tache}} </li>
   </ul>`,
   styleUrls: ['./taches.component.css']
 
